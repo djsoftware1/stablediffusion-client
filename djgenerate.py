@@ -6,6 +6,7 @@ import io
 import os
 import base64
 import datetime
+import sys
 from PIL import Image, PngImagePlugin
 
 # todo make these configurable either as parameters or other methods
@@ -17,8 +18,14 @@ url = "http://10.0.0.10:7861"
 payload = {
     "prompt": "puppy dog",
     "negative_prompt": "ugly, nsfw, bad hands",
-    "steps": 20
+    "steps": 30
 }
+
+# Check if command line parameter 1 has been passed if so set the payload prompt from it:
+if len(sys.argv) > 1:
+    payload["prompt"] = sys.argv[1]
+
+
 
 print(f'=== URL:{url}/sdapi/v1/txt2img')
 response = requests.post(url=f'{url}/sdapi/v1/txt2img', json=payload)
