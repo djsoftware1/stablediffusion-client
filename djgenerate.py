@@ -48,7 +48,8 @@ for i in r['images']:
     pnginfo.add_text("parameters", response2.json().get("info"))
 
     # Generate filename based on prompt
-    prompt_filename = "output " + payload["prompt"] + ".png"
+    #prompt_filename = "output " + payload["prompt"] + ".png"
+    prompt_filename = payload["prompt"] + ".png"
 
     # Replace invalid chars with space
     prompt_filename = "".join(c if c not in r'\/:*?"<>|' else " " for c in prompt_filename)
