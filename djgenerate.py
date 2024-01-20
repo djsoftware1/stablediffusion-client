@@ -17,7 +17,7 @@ url = "http://10.0.0.10:7861"
 
 payload = {
     "prompt": "puppy dog",
-    "negative_prompt": "ugly, nsfw, bad hands",
+    "negative_prompt": "ugly,nsfw,bad hands,ugly face,low detail,low quality,bad anatomy",
     "steps": 30
 }
 
