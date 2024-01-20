@@ -63,6 +63,7 @@ for i in r['images']:
     
     output_path = os.path.join(output_folder, prompt_filename)
     # Check if output file exists already and if so append a number like " (1).png"
+    count = 1
     while os.path.exists(output_path):
         filename, file_extension = os.path.splitext(output_path)
         output_path = f"{filename} ({count}){file_extension}"

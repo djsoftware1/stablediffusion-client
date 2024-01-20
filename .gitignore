@@ -1,3 +1,5 @@
 
 /output*
 *.png
+_log.txt
+input.txt
