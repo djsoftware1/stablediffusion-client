@@ -18,7 +18,8 @@ url = "http://10.0.0.10:7861"
 payload = {
     "prompt": "puppy dog",
     "negative_prompt": "ugly,nsfw,bad hands,ugly face,low detail,low quality,bad anatomy",
-    "steps": 30
+    "steps": 35,
+    "seed": -1
 }
 
 # Check if command line parameter 1 has been passed if so set the payload prompt from it:
