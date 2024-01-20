@@ -22,7 +22,7 @@ payload = {
     "seed": -1,
     "width": 512,
     "height": 512,
-    "sampler_index": "Euler A"
+    "sampler_index": "Euler a",
 }
 
 # Check if command line parameter 1 has been passed if so set the payload prompt from it:
