@@ -19,7 +19,10 @@ payload = {
     "prompt": "puppy dog",
     "negative_prompt": "ugly,nsfw,bad hands,ugly face,low detail,low quality,bad anatomy",
     "steps": 35,
-    "seed": -1
+    "seed": -1,
+    "width": 512,
+    "height": 512,
+    "sampler_index": "Euler A"
 }
 
 # Check if command line parameter 1 has been passed if so set the payload prompt from it:
